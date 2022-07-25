@@ -1,13 +1,25 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+background-color: #f1f1f1;
+
+}
+
+form {
+  border:1px solid #ccc;
+  margin: 50px 100px 50px 100px;
+  background-color: #c0bbbb;
+  border-radius: 1rem;
+
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  width: 98%;
+  padding: 11px;
+  margin: 10px 0 20px 0;
   display: inline-block;
   border: none;
+  border-radius: 11px;
   background: #f1f1f1;
 }
 
@@ -62,8 +74,15 @@ button:hover {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 767px) {
+
+  form {
+    margin: 0;
+  }
+
   .cancelbtn, .signupbtn {
      width: 100%;
   }
+
+ 
 }
